@@ -63,9 +63,9 @@ set SMTP_PASSWORD=your_app_password
 	•	Alternatively, set the environment variable at the system level.
 
 	5.	Run the Script
-	•	Open Command Prompt.
-	•	Navigate to the script directory.
-	•	Execute:
+			Open Command Prompt.
+			Navigate to the script directory.
+			Execute:
 
 python backup_script.py
 
@@ -74,19 +74,19 @@ python backup_script.py
 Automate with Task Scheduler
 
 	1.	Open Task Scheduler:
-	•	Search for “Task Scheduler” in the Start menu.
+			Search for “Task Scheduler” in the Start menu.
 	2.	Create a New Task:
-	•	Provide a name (e.g., “Automated Backup”).
-	•	Configure to run whether the user is logged on or not.
+			Provide a name (e.g., “Automated Backup”).
+			Configure to run whether the user is logged on or not.
 	3.	Set Triggers:
-	•	Define the schedule (e.g., daily at 2:00 AM).
+			Define the schedule (e.g., daily at 2:00 AM).
 	4.	Set Actions:
-	•	Action: Start a program.
-	•	Program/script: Path to python.exe (e.g., C:\Python39\python.exe).
-	•	Add arguments: Path to backup_script.py (e.g., C:\path\to\backup_script.py).
+			Action: Start a program.
+			Program/script: Path to python.exe (e.g., C:\Python39\python.exe).
+			Add arguments: Path to backup_script.py (e.g., C:\path\to\backup_script.py).
 	5.	Ensure Environment Variables:
-	•	If using SMTP_PASSWORD, set it as a system environment variable.
-	•	Alternatively, use a wrapper batch file to set the variable before running the script.
+			If using SMTP_PASSWORD, set it as a system environment variable.
+			Alternatively, use a wrapper batch file to set the variable before running the script.
 
 Important Notes
 
@@ -99,10 +99,3 @@ Important Notes
 	•	Ensure Gmail SMTP settings are correctly configured.
 	•	Check that emails are being sent and received as expected.
 
-Troubleshooting
-
-	•	Errors in Logs: Check the log file for details on any issues.
-	•	No Backup Created: Verify paths and permissions.
-	•	Email Not Sent: Confirm SMTP settings and internet connectivity.
-
-This concise guide provides essential information for setting up and using the Windows Backup Script.
