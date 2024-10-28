@@ -1,8 +1,4 @@
-# SystemEngineer
-
-SystemEngineer Repository
-
-Welcome to the SystemEngineer repository!
+# System Engineer
 
 This repository is a collection of my working and educational projects focused on system administration and engineering. The projects included here are designed to provide practical tools, scripts, and resources that are valuable for system administrators to know and use in their daily tasks.
 
