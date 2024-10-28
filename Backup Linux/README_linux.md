@@ -1,4 +1,4 @@
-Backup Script
+Backup for Linux
 
 This is a Python script designed to automate the backup of specified directories on a Linux system. It compresses the selected directories into a timestamped .tar.gz archive, preserving file permissions and metadata. The script includes logging functionality to track backup activities and can send email notifications upon success or failure using Gmail’s SMTP server.
 
@@ -115,9 +115,3 @@ Security Considerations
 	•	Protect Credentials: Do not hardcode sensitive information like passwords in the script. Use environment variables or secure storage methods.
 	•	File Permissions: Restrict access to the script and log files to authorized users only.
 	•	Data Sensitivity: If backing up sensitive data, consider encrypting the backup archives.
-
-Disclaimer
-
-Use this script at your own risk. Always test backup and restore procedures to ensure data integrity. The author is not responsible for any data loss or damage resulting from the use of this script.
-
-This brief description is intended to provide an overview of the backup script for inclusion in a README.md file. Customize and expand upon this description as needed for your specific use case.
