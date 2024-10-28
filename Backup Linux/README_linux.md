@@ -17,14 +17,14 @@ How It Works
 
 	1.	Configuration: Set the source directories to back up, the backup destination, log file path, and email settings in the script.
 	2.	Backup Process:
-	•	The script generates a timestamped filename for the backup archive.
-	•	It uses the tar command to compress the specified directories into a .tar.gz file.
-	•	File permissions and metadata are preserved using the --preserve option.
+			The script generates a timestamped filename for the backup archive.
+			It uses the tar command to compress the specified directories into a .tar.gz file.
+			File permissions and metadata are preserved using the --preserve option.
 	3.	Logging: All activities, including successes and errors, are logged to the specified log file.
 	4.	Email Notifications:
-	•	If enabled, the script sends an email notification upon completion.
-	•	Utilizes Gmail’s SMTP server with TLS encryption for secure email transmission.
-	•	Requires a Gmail account and an App Password for authentication.
+			If enabled, the script sends an email notification upon completion.
+			Utilizes Gmail’s SMTP server with TLS encryption for secure email transmission.
+			Requires a Gmail account and an App Password for authentication.
 
 Requirements
 
@@ -61,18 +61,18 @@ SMTP_PASSWORD = os.environ.get('SMTP_PASSWORD')  # Use an environment variable f
 
 
 	3.	Set Up Gmail SMTP:
-	•	Enable 2FA: Follow Google’s instructions to enable Two-Factor Authentication on your account.
-	•	Generate an App Password: Create an App Password specifically for this script.
-	•	Set SMTP Password:
-	•	Option 1: Export the App Password as an environment variable:
+			Enable 2FA: Follow Google’s instructions to enable Two-Factor Authentication on your account.
+			Generate an App Password: Create an App Password specifically for this script.
+			Set SMTP Password:
+		Option 1: Export the App Password as an environment variable:
 
 export SMTP_PASSWORD='your_app_password'
 
 
-	•	Option 2: Store the password securely using a configuration file or secret manager.
+		Option 2: Store the password securely using a configuration file or secret manager.
 
 	4.	Ensure Proper Permissions:
-	•	Make the script executable:
+			Make the script executable:
 
 chmod +x backup_script.py
 
