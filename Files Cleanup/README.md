@@ -19,8 +19,10 @@ This Python script automates the cleanup of old files in a specified directory. 
 
 ## Usage
 1. Delete files older that 7 days
-python file_cleanup.py /path/to/logs 7
+   ```bash
+   python file_cleanup.py /path/to/logs 7
 
 2. Simulate deletion without removing files
-python file_cleanup.py /path/to/logs 7 --dry-run
+   ```bash
+   python file_cleanup.py /path/to/logs 7 --dry-run
 
