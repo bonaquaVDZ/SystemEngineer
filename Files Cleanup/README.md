@@ -14,15 +14,19 @@ This Python script automates the cleanup of old files in a specified directory. 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/files-cleanup.git
-   cd files-cleanup
+   git clone https://github.com/yourusername/file-cleanup-script.git
+   cd file-cleanup-script
 
 ## Usage
 1. Delete files older that 7 days
-   ```bash
-   python file_cleanup.py /path/to/logs 7
+    ```bash
+    python file_cleanup.py /path/to/logs 7
 
 2. Simulate deletion without removing files
-   ```bash
-   python file_cleanup.py /path/to/logs 7 --dry-run
+    ```bash
+    python file_cleanup.py /path/to/logs 7 --dry-run
+
+3. Delete with confirmation for each file
+    ```bash
+    python file_cleanup.py /path/to/logs 7 --confirm
 
