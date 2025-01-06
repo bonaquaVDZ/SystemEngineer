@@ -16,13 +16,13 @@ This script automates the cleanup of old files in a specified directory. It scan
 
 ## Usage
 1. Delete files older that 7 days
-    python cleanup_olf_files.py /path/to/logs 7
+    python cleanup_old_files.py /path/to/logs 7
 
 2. Simulate deletion without removing files
-    python cleanup_olf_files.py /path/to/logs 7 --dry-run
+    python cleanup_old_files.py /path/to/logs 7 --dry-run
 
 3. Delete with confirmation for each file
-    python cleanup_olf_files.py /path/to/logs 7 --confirm
+    python cleanup_old_files.py /path/to/logs 7 --confirm
 """
 
 import os
