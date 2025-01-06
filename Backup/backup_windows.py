@@ -1,3 +1,34 @@
+#!/usr/bin/env python3
+"""
+Windows Backup Script
+---------------------
+A Python script to automate the backup of specified directories on a Windows system. It compresses selected directories into timestamped `.zip` archives, logs activities, and can send email notifications via Gmail SMTP.
+
+Key Features:
+    - Automates backups of multiple directories.
+    - Creates timestamped compressed `.zip` archives.
+    - Logs operations and errors to a log file.
+    - Sends optional email notifications on success or failure.
+
+Requirements:
+    - Python 3 installed on Windows.
+    - Read/write access to source directories, backup location, and log file.
+    - Gmail account with Two-Factor Authentication and an App Password for SMTP.
+
+Quick Setup:
+    1. Configure source directories, backup location, and log file paths in the script.
+    2. Set up Gmail SMTP for email notifications:
+        - Enable 2FA on your Gmail account.
+        - Generate an App Password for the script.
+        - Set the `SMTP_PASSWORD` as an environment variable:
+          `set SMTP_PASSWORD=your_app_password`
+    3. Run the script manually or automate using Task Scheduler.
+
+Security Notes:
+    - Do not hardcode sensitive credentials in the script. Use environment variables for secure storage.
+    - Ensure proper permissions for all specified paths.
+"""
+
 import os
 import datetime
 import logging

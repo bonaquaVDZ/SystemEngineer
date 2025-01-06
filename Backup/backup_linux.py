@@ -1,4 +1,33 @@
 #!/usr/bin/env python3
+"""
+Linux Backup Script
+-------------------
+This Python script automates the backup of specified directories on a Linux system. It compresses the selected directories into a timestamped `.tar.gz` archive, logs all activities, and sends email notifications upon success or failure.
+
+Key Features:
+    - Automates backups of specified directories.
+    - Creates timestamped compressed archives.
+    - Logs operations and errors to a log file.
+    - Sends email notifications via Gmail's SMTP server.
+
+Setup:
+    1. Configure source directories, backup location, and log file path.
+    2. Enable email notifications by setting up Gmail SMTP and using an App Password.
+    3. Run manually or schedule with cron for regular backups.
+
+Requirements:
+    - Python 3
+    - Read access to source directories.
+    - Write access to backup and log locations.
+    - A Gmail account with 2FA and an App Password for SMTP.
+
+Usage:
+    - Run the script manually: `./backup_linux.py`
+    - Schedule automated backups using `cron`.
+
+Security Note:
+    - Use environment variables for sensitive credentials like SMTP passwords.
+"""
 
 import datetime
 import logging
@@ -26,7 +55,6 @@ SMTP_PORT = 587  # Gmail SMTP port for TLS
 SMTP_USERNAME = 'your.email@gmail.com'
 
 # For security, retrieve the SMTP password from an environment variable
-# Use an App Password if using Gmail with 2FA enabled
 SMTP_PASSWORD = os.environ.get('SMTP_PASSWORD')
 
 # Set up logging
