@@ -37,7 +37,6 @@ try {
 }
 
 # Display task details
-
 Write-Host "`nScheduled Task Details: " -ForegroundColor Yellow
 Write-Host "------------------------------------------------------"
 Write-Host "Task name: $TaskName"
