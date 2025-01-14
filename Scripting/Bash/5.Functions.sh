@@ -24,4 +24,30 @@ myfunc() {
 
 myfunc
 
+# Alternate way of defining function
+function get_name() {
+    echo "John"
+}
+
+echo "You are $(get_name)"
+
+
+# Raising Errors
+newfun() {
+    return 1
+}
+
+if newfun; then
+    echo "Success"
+else
+    echo "Failure"
+fi
+
+# Arguments
+# $# 	Number of arguments
+# $* 	All positional arguments (as a single word)
+# $@ 	All positional arguments (as separate strings)
+# $1 	First argument
+# $_ 	Last argument of the previous command
+
 
